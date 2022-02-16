@@ -1,4 +1,4 @@
-/*
+
 function computerPlay () {
     let computerSelection = '';
     let selection = Math.floor(Math.random() * 2);
@@ -9,7 +9,7 @@ function computerPlay () {
     } else {
         computerSelection = 'scissor';
     }
-    console.log(`Computer choses ${computerSelection}`);
+    console.log(`Computer chooses ${computerSelection}`);
     return computerSelection;
 }
 
@@ -29,15 +29,19 @@ function playRound(playerSelection, computerSelection) {
     return winner;
 }
 
-/*
-
 function game() {
     for (let i = 0; i < 5; i++) { 
     }
 }
 
+const buttons = document.querySelectorAll(".button");
 
-const playerSelection = prompt('Chose rock, paper or scissor: ');
-const computerSelection = computerPlay();
-console.log('The winner is ' + playRound(playerSelection, computerSelection));
-*/
+buttons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+        const playerSelection = e.target.id;
+        const computerSelection = computerPlay();
+        console.log('The winner is ' + playRound(playerSelection, computerSelection));
+    });
+});
+
+
