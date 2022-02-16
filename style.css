@@ -1,0 +1,52 @@
+body{
+    font-family: 'Open Sans';
+    margin: auto;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #1F2937;
+    color: white;
+}
+
+.header .content{
+    padding: 18px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: large;
+}
+
+.quick-access a{
+    font-size: small;
+    color: white;
+    padding: 5px;
+    border-color: #1F2937;
+    border-width: 0px;
+    margin-left: 8px;
+    transition-duration: 0.4s;
+}
+
+.quick-access a:hover{
+    border-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+.button{
+    max-width: 100px;
+    filter: hue-rotate(20deg);
+    filter: drop-shadow(1px 1px 1px gray);
+}

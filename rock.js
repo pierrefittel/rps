@@ -1,3 +1,4 @@
+/*
 function computerPlay () {
     let computerSelection = '';
     let selection = Math.floor(Math.random() * 2);
@@ -34,8 +35,9 @@ function game() {
     for (let i = 0; i < 5; i++) { 
     }
 }
-*/
+
 
 const playerSelection = prompt('Chose rock, paper or scissor: ');
 const computerSelection = computerPlay();
 console.log('The winner is ' + playRound(playerSelection, computerSelection));
+*/
